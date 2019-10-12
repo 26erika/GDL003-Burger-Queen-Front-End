@@ -2,7 +2,7 @@
   "name": "churrolate",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://26erika.github.io/GDL003-Burger-Queen-Front-End/",
+  "homepage": " https://26erika.github.io/churrolatte/",
   "dependencies": {
     "@babel/runtime": "^7.6.2",
     "axios": "^0.19.0",
