@@ -67,8 +67,6 @@ export default class MenuNav extends React.Component {
   }
 
   render() {
-    var tokenGuardado = localStorage.getItem("token")
-    console.log(tokenGuardado)
     const {id} = this.props.match.params
     return (
       <div>

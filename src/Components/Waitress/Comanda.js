@@ -15,13 +15,10 @@ class Comanda extends Component {
 
   sendOrder = () => {
     let orderToSend = this.props.itemsToOrder
-    console.log(orderToSend);
-
 
     Axios({
       method: 'POST',
       url: baseURL + `/orders`,
-      autorizacion: localStorage.token,
       headers: {
         'Content-Type': 'application/json;charset=UTF-8',
         "Access-Control-Allow-Origin": "*",
