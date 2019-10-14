@@ -1,43 +1,44 @@
 .NewOrder {
   text-align: center;
-  margin: 0;
-  padding: 0;
-  border: 0;
-  vertical-align: baseline;
-  box-sizing: border-box;
-  justify-content: space-between;
 }
 
 .navMenu {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    margin-top: 4rem;
     width: 11rem;
-    justify-content: space-between;
-    background-color: rgba(242, 182, 4, 1);
-    flex: none;
+    background-color: #ff7b48;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     position: fixed; /* Make it stick, even on scroll */
     overflow: auto; /* Enable scrolling if the sidenav has too much content */
   }
 
-.blockButtons a{
+.blockButtons {
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: bold;
+    color: rgb(44, 2, 143);
+    background-color: rgba(242, 182, 4, 1);
+    padding: .7rem;
+    width: 11rem;
     display: block;
-    color: #160146;
-    padding: 1rem .3rem;
     text-decoration: none;
-    align-items: center;
+    line-height: 1.5rem;
+    border-radius: 2rem;
+    opacity: .8;
+    margin-bottom: .3rem;
 }
 
 .blockButtons :hover {
-    background-color: rgba(242, 133, 38, 1);
+    background-color:  rgba(165, 50, 8, 1);
     color: black;
   }
 
 .active {
-    background-color: rgba(165, 50, 8, 1);
+    background-color: rgb(15, 1, 65);
     color: white;
     transform: translateY(4px);
 }
@@ -47,23 +48,91 @@
   flex-direction: column;
   display: flex;
   align-items: center;
-  justify-items: center;
+  height: 100%;
+  margin-top: 2rem;
 }
 
-.form {
-  font-size: 1rem;
+.nameForm {
+  font-size: 1.1rem;
+  color: rgb(94, 20, 1);
+  font-weight: bold;
+  margin-top: auto;
 }
 
 .image {
-  width: 10rem; 
+  width: 11rem; 
   height: 9.5rem;
+  border-radius: 1rem;
 }
 
+.buttonOrder {
+  background: #a73102;
+  color: #ffffff;
+  border: .2rem solid #441902;
+  border-radius: 2rem;
+  opacity: .4;
+  width: 7.5rem; 
+  height: 2.5rem;
+  align-items: center;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-top: -2rem;
+}
 
 .listOrder {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-top: -43rem;
   flex-direction: column;
+  height: 100%;
+  float: right;
+  font-size: 1rem;
+  color: rgb(38, 2, 168);
+  font-weight: bold;
+  opacity: .7;
+  margin-left: -5rem;
+  width: 15rem;
+  text-align: center;
+}
+
+.orderForm {
+  list-style-type: none;
+  margin-top: auto;
+  float: left;
+  margin-left: -2.5rem;
+  width: 14rem;
   display: flex;
-  align-items: center;
-  justify-items: center;
+}
+
+.buttonSend {
+  background: rgba(242, 182, 4, 1);
+  color: rgb(27, 3, 116);
+  border: .2rem solid #998304;
+  border-radius: 1rem;
+  opacity: 1;
+  width: 9rem; 
+  height: 2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  float: center;
+}
+
+.buttonEliminate {
+  background: rgba(242, 182, 4, 1);
+  color: #810303;
+  border: .1rem solid #998304;
+  border-radius: 1rem;
+  opacity: 1;
+  width: 1.5rem; 
+  height: 1.5rem;
+  text-align: center;
+  font-size: .7rem;
+  font-weight: bold;
+}
+
+.text{
+  font-size: 1.3rem;
+  text-align: center;
 }

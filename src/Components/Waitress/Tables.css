@@ -19,3 +19,63 @@
     padding: 5em 0;
     font-weight: bold;
   }
+
+  .indicaions{
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    color: rgb(94, 20, 1);
+  }
+
+  .listOrders {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 5rem;
+    flex-direction: column;
+    background-color: rgba(242, 182, 4, 1);
+    opacity: .7;
+    width: 20rem;
+    height: 100%;
+    text-align: center;
+    line-height: 2rem;
+    overflow: auto;
+    display: flex;
+    align-items: center;
+    float: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: .5rem;
+  }
+
+  .productsOrder {
+    font-size: 1.5rem;
+    color: rgb(2, 2, 145);
+    font-weight: normal;
+    margin-top: -2.9rem;
+  }
+
+  .tableName {
+    font-size: 1.5rem;
+    color: rgb(94, 20, 1);
+    font-weight: normal;
+    margin-top: .5rem;
+    margin-bottom: 1rem;
+  }
+
+  .buttonFinish {
+    background: #a73102;
+    color: #ffffff;
+    border: .2rem solid #441902;
+    border-radius: 2rem;
+    opacity: .6;
+    width: 7.5rem; 
+    height: 2.5rem;
+    align-items: center;
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-top: -1rem;
+    margin-bottom: 1rem;
+  }

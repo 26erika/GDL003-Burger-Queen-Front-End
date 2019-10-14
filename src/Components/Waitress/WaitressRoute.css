@@ -29,8 +29,9 @@
     align-items: center;
     justify-content: space-between;
     list-style: none;
-    font-size: calc(10px + 2vmin);
+    font-size: 1.5rem;
     color: white;
+    width: 100%;
   }
   
   .navRouter {
@@ -39,9 +40,9 @@
     padding: 0;
     overflow: hidden;
     background-color:#3a1f14;
-    position: -webkit-sticky; /* Safari */
-    position: sticky;
     top: 0;
+    position: fixed; /* Make it stick, even on scroll */
+    overflow: auto; /* Enable scrolling if the sidenav has too much content */
   }
   
   .appNav {
@@ -66,3 +67,9 @@
     background-color: rgba(165, 50, 8, 1);
   }
   
+  .welcome{
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 8rem;
+    color: rgb(94, 20, 1);
+  }

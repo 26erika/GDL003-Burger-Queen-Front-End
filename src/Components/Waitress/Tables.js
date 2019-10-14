@@ -6,7 +6,7 @@ class Tables extends Component {
     render() {
         return (
             <div>
-                <h1>Selecciona una mesa</h1>
+                <h1 className="indicaions">Selecciona una mesa</h1>
                 <div className='styleTables'>
                     <div className='textTables'
                         onClick={() => this.props.history.push('/Nueva_Orden/10')}> Mesa10

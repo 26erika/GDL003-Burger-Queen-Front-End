@@ -1,6 +1,7 @@
 import React from "react";
 import Axios from "axios";
 import baseURL from "../../Constant/env";
+import "./Tables.css";
 
 export default class OrderStatus extends React.Component {
   state = {
@@ -30,23 +31,23 @@ export default class OrderStatus extends React.Component {
         {this.state.comanda
           ? this.state.comanda.map(item => {
               return (
-                <li className="list">
-                  <h6 className="form" key={item.key}>
+                <li className="listOrders">
+                  <h6 className="tableName" key={item.key}>
                     {item.name}
                   </h6>
-                  <h6 className="form" key={item.key}>
+                  <h6 className="tableName" key={item.key}>
                       Estatus: {item.status}
                   </h6>
                   {
                       item.comanda.map((orderList)=>{
                           return (
-                          <li className="list">
+                          <li className="productsOrder">
                           <p>{orderList.name}</p>
                           </li>
                           )
                       })
                   }
-                  <button onClick={() => {}}>Cobrar</button>
+                  <button className="buttonFinish" onClick={() => {}}>Cobrar</button>
                 </li>
               );
             })

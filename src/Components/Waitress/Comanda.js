@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import baseURL from "../../Constant/env";
 import Axios from "axios";
-import "./Menu.css"; 
+import "./Menu.css";
 
 class Comanda extends Component {
 
@@ -38,28 +38,27 @@ class Comanda extends Component {
   render() {
     return (
       <div className='listOrder'>
-        <p>Numero de mesa</p>
+        <p>Mesa / Nombre</p>
         <input
-          type="text"
+          type="text" className="text"
           defaultValue={this.props.table != null && this.props.table !== '0'
             ? this.props.table : ''}></input>
         <div>
           <ul>
             {this.props.itemsToOrder.map((item, index) => {
               return (
-                <li>
-                  {item.name} {"$ " + item.price}
-                  <button onClick={() =>
-                    this.props.removeItem(index)}>Eliminar</button>
+                <li className="orderForm">
+                  <button className="buttonEliminate" onClick={() =>
+                    this.props.removeItem(index)}>x</button>
+                  {item.name}{" $" + item.price}
                 </li>
               );
             })}
           </ul>
-          <button onClick={() => {
+          <button className="buttonSend" onClick={() => {
             this.sendOrder()
-          }}>Enviar pedido a cocina</button>
-          <p>Total: $ {this.calculateTotal()}</p>
-          <button onClick={() => { }}>Cobrar cuenta</button>
+          }}>Enviar a cocina</button>
+          <p className="text">Total: ${this.calculateTotal()}</p>
         </div>
       </div>
     );

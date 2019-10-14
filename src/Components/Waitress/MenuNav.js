@@ -77,8 +77,8 @@ export default class MenuNav extends React.Component {
               console.log(item);
               
             return (
-              <li className="blockButtons">
-                <button
+              <li >
+                <button className="blockButtons"
                   key={item.key}
                   onClick={() =>
                     this.setState({ subCategory: item.subCategories })
@@ -96,11 +96,11 @@ export default class MenuNav extends React.Component {
                 return (
                   <li className="list">
                     <img className="image" src={item.url} alt=""></img>
-                    <h6 className="form" key={item.key}>
-                      {item.name}
+                    <h6 className="nameForm" key={item.key}>
+                      {item.name}{ " $" + item.price}
                     </h6>
-                    <p>{ "$ " + item.price}</p>
-                    <button onClick={() => this.orderItem(item)}>
+                    
+                    <button className="buttonOrder" onClick={() => this.orderItem(item)}>
                       Ordenar
                     </button>
                   </li>

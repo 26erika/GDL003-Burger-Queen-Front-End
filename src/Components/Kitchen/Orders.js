@@ -1,6 +1,7 @@
 import React from "react";
 import Axios from "axios";
 import baseURL from "../../Constant/env";
+import '../Waitress/Tables.css';
 
 export default class KitchenOrders extends React.Component {
   state = {
@@ -30,14 +31,14 @@ export default class KitchenOrders extends React.Component {
         {this.state.comanda
           ? this.state.comanda.map(item => {
               return (
-                <li className="list">
-                  <h6 className="form" key={item.key}>
+                <li className="listOrders">
+                  <h6 className="tableName" key={item.key}>
                     {item.name}
                   </h6>
                   {
                       item.comanda.map((orderList)=>{
                           return (
-                          <li className="list">
+                          <li className="productsOrder">
                           <p>{orderList.name}</p>
                           </li>
                           )
