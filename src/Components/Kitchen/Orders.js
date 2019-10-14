@@ -55,7 +55,7 @@ export default class KitchenOrders extends React.Component {
                   <h6 className="tableName" key={item.key}>
                     {item.name}
                   </h6>
-                  <h5>Estatus: {item.status}</h5>
+                  <h5 className="tableName">Estatus: {item.status}</h5>
                   {
                       item.comanda.map((orderList)=>{
                           return (
@@ -65,7 +65,7 @@ export default class KitchenOrders extends React.Component {
                           )
                       })
                   }
-                  <button onClick={() => {this.readyOrder()}}>Listo</button>
+                  <button className="buttonFinish" onClick={() => {this.readyOrder()}}>Listo</button>
                 </li>
               );
             })
