@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/churrolatte/precache-manifest.d9f6c88204889f60887028abcb160aac.js"
+  "/churrolatte/precache-manifest.071b5fedce534b4ea0046d9fc58c5bbf.js"
 );
 
 self.addEventListener('message', (event) => {
