@@ -38,7 +38,7 @@ class Comanda extends Component {
         <p>Mesa / Nombre</p>
         <input
           type="text" className="text"
-          defaultValue={this.props.table != null && this.props.table !== '0'
+          defaultValue={this.props.table != null 
             ? this.props.table : ''}></input>
         <div>
           <ul>
