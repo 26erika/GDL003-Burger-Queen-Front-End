@@ -23,7 +23,7 @@ class WaitressRoutes extends Component {
                     <Route path="/Nueva_Orden/:id" component={Menu} />
                     <Route path="/Estatus_de_Orden" component={OrderStatus}/>
                 </Router>
-
+                <p className="welcome">¡Hola!</p>
             </div>
         )
     }

@@ -42,18 +42,6 @@ class NewOrder extends Component {
         })
     }
 
-   
-    // products = () => {
-    //     this.state.order({
-    //         name: item.name,
-    //         price: item.price
-    //     })
-    // }
-
-    // saveOrder = () => {
-    //     this.setState({ ...order, products })
-    // }
-
     render() {
 
         const orderProducts = () => {
@@ -65,8 +53,6 @@ class NewOrder extends Component {
 
             <Menu
                 ddd={"asdasd"}
-                //orderProducts={this.getId}
-                //submitValuesMethod={this.submitValues}
                 action={this.orderProducts}
             />
 

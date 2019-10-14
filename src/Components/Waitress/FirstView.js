@@ -15,7 +15,7 @@ const View = () => {
                 <div>
                     <nav>
                         <ul>
-                        Selecciona tu puesto
+                        <p className="indicaionsFirst">Selecciona tu puesto</p>
                             <li className='navList'>
                                 <Link to="/Mesero" className='buttonAccessA'>Mesero</Link>
                             </li>
