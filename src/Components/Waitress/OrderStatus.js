@@ -18,7 +18,7 @@ export default class OrderStatus extends React.Component {
       let comanda = [];
       console.log(res);
       
-      const ordersFromKitchen = res.comanda;
+      const ordersFromKitchen = res.data;
       for(let i=0; i<ordersFromKitchen.length;i++){
         comanda.push(ordersFromKitchen[i]);
       }
