@@ -18,7 +18,7 @@ export default class MenuNav extends React.Component {
         }
     }).then(res => {
 
-        const products = res.data;
+    const products = res.data;
       let categories = [];
       let categoryNames = [];
       let i;
@@ -108,11 +108,12 @@ export default class MenuNav extends React.Component {
         </div>
         <div>
           {this.state.itemsToOrder.length > 0 ? (
-            <Comanda 
-            itemsToOrder={this.state.itemsToOrder} 
-            removeItem={this.removeItem} 
-            table={id}/>
-          ) : null}
+            <Comanda  
+              key={this.id}
+              itemsToOrder={this.state.itemsToOrder} 
+              removeItem={this.removeItem} 
+              table={id}/>
+            ) : null}
         </div>
       </div>
     );
